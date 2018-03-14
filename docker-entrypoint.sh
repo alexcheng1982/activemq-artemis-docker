@@ -85,6 +85,8 @@ function performance-journal {
 
 performance-journal
 
+chown -R artemis.artemis /var/lib/artemis
+
 if [ "$1" = 'artemis-server' ]; then
 	set -- gosu artemis "./artemis" "run"
 fi
